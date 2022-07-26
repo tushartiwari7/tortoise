@@ -1,0 +1,31 @@
+.landing-page__banner {
+  width: 100%;
+}
+.landing-page__content,
+.landing-page__actions {
+  gap: 2rem;
+}
+.landing-page__actions > input {
+  border: 0;
+}
+.landing-page__poster > img {
+  max-width: 80%;
+}
+
+.landing-page__banner {
+  grid-template-columns: repeat(2, 1fr);
+}
+h2.landing-page__title {
+  color: white;
+}
+
+.landing-page__actions > input {
+  color: black;
+  min-width: fit-content;
+}
+div.landing-page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
