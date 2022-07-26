@@ -18,7 +18,7 @@ const LandingPage = () => {
   };
 
   return (
-    <Row className="full-width">
+    <Row className="full-width reverse center">
       <Col span={12} className="landing-page__content">
         <Typography.Title className="landing-page__title" level={2}>
           Let's see how fast and Precise you are
