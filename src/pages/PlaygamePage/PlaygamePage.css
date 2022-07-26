@@ -1,0 +1,14 @@
+.alphabet-display-card {
+  width: 300px;
+  margin: 2rem auto;
+}
+.input-box,
+.game-heading {
+  flex-grow: 1;
+}
+.game-header {
+  height: auto;
+}
+.game-header h2 {
+  margin: 10px;
+}
