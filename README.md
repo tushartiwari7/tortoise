@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="https://uploads-ssl.webflow.com/61f287872ac9c2dd28c010f7/61fa8e4fef375504a01d49b3_Horizontal%20Logo%20-%20Tortoise.svg" height="100" width="400" alt="logo"/>
+  <h1>Tortoise</h1>
+  <p> <a href="https://tortoise.vercel.app">Tortoise</a> is a typing game to see how fast you type.</p>
+ </div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- ### Home Page
+  - A landing page with a input box to enter username.
+  - A Modal opens including Game Rules when user clicks on Play Now.
+  - On pressing `OK` on Modal will navigate user to play the game.
+  <br/> ![Screenshot (68)](https://user-images.githubusercontent.com/66322728/181265661-81699e03-6bb1-4823-aba9-66f377b60d81.png)
+   ![Screenshot (69)](https://user-images.githubusercontent.com/66322728/181265676-45b68519-5672-494f-85d9-3efe3e09ef30.png)
+   
+- ### Play Game Page
+  - A timer to see how much Time Elapsed.
+  - A Output Box showing One Alphabet at a Time.
+  - A Footer with Input Box to enter the character. <br/>
+![Screenshot (70)](https://user-images.githubusercontent.com/66322728/181265680-4e42491a-f5d9-477d-9408-574d3aca88d8.png)
 
-## Available Scripts
+ - ### Results Page
+   - After playing the game user gets navigated to this page where user can see the:
+      -  Status (Success/Failed)
+      -  Time Taken
+      -  Score
+      -  User Name
+   - User can either Play the Game Again by clicking on Play Again Button.
+   - Or View Leaderboard to see the data of other players sorted by Score.
+    <br/> 
+![Screenshot (71)](https://user-images.githubusercontent.com/66322728/181265683-662963a1-7e8d-4789-9966-10b5b3901967.png)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - ### LeaderBoard Page
+      - See how user's score in currrent game is ranked with respect to other matches.
+      - Persist Leaderboad data on Refresh.
+![Screenshot (72)](https://user-images.githubusercontent.com/66322728/181265684-af68cb34-13c9-4fe3-9029-8a760eb7929b.png)
