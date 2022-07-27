@@ -4,7 +4,7 @@ import { useUser } from "global";
 
 const columns = [
   {
-    title: "S No.",
+    title: "num",
     dataIndex: "key",
     key: "key",
   },
