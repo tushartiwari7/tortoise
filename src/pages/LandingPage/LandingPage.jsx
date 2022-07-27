@@ -4,16 +4,18 @@ import "./LandingPage.css";
 import poster from "assets/poster.svg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useUser } from "global";
+import { UPDATE_NAME } from "assets/utils";
 const LandingPage = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const updateName = (event) => setName(event.target.value);
-
+  const { dispatch } = useUser();
   const storeName = () => {
     if (!name) {
       return message.error("Name cannot be empty");
     }
-    // ! write code to store name to context
+    dispatch({ type: UPDATE_NAME, payload: name });
     navigate("/play");
   };
 

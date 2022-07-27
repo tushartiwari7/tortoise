@@ -1,14 +1,17 @@
 .landing-page__banner {
   width: 100%;
 }
+
 .landing-page__content,
 .landing-page__actions {
   gap: 2rem;
 }
+
 .landing-page__actions > input {
   border: 0;
   flex-grow: 1;
 }
+
 .landing-page__poster > img {
   max-width: 80%;
 }
@@ -16,6 +19,7 @@
 .landing-page__banner {
   grid-template-columns: repeat(2, 1fr);
 }
+
 h2.landing-page__title {
   color: white;
 }
@@ -24,6 +28,7 @@ h2.landing-page__title {
   color: black;
   min-width: fit-content;
 }
+
 div.landing-page__content {
   min-width: 400px;
   display: flex;
@@ -31,10 +36,12 @@ div.landing-page__content {
   align-items: center;
   justify-content: center;
 }
+
 .landing-page__actions {
   width: 100%;
   padding: 0 1rem;
 }
+
 .reverse {
   flex-wrap: wrap-reverse;
   justify-content: center;
