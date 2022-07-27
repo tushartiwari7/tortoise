@@ -29,6 +29,7 @@ const PlaygamePage = () => {
         <Row>
           <Col className="input-box">
             <Input
+              autoFocus
               placeholder="Type Alphabet"
               onChange={validateInput}
               disabled={current.count === 20}

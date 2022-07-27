@@ -53,7 +53,7 @@ export const useControls = () => {
 
     // if user has reached the maximum time limit for the game
     if (+timer.split(":")[0] >= MAX_TIME_LIMIT) {
-      dispatch({ type: GAME_TIMEOUT });
+      dispatch({ type: GAME_TIMEOUT, payload: { timeTaken: timer } });
       return navigate("/result");
     }
 

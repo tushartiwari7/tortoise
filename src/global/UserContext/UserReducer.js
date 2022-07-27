@@ -25,6 +25,7 @@ export const reducerFn = (state, action) => {
         ...state,
         status: "Failed",
         score: 0,
+        timeTaken: action.payload.timeTaken,
         title: `Better Luck Next Time!`,
         subTitle: `Oops, You Failed ${state.userName}. You exhausted maximum time to complete this game. Try completing it within ${MAX_TIME_LIMIT} seconds`,
       };
@@ -33,6 +34,7 @@ export const reducerFn = (state, action) => {
       return {
         ...state,
         status: "Success",
+        timeTaken: action.payload.timeTaken,
         score: getScore(action.payload.timeTaken),
         title: `You Scored ${getScore(action.payload.timeTaken)} points`,
         subTitle: `Hooray! ${state.userName} you completed Game in just ${action.payload.timeTaken} seconds`,
