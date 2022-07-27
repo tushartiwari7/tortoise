@@ -1,9 +1,18 @@
 import "./PlaygamePage.css";
-import { Layout, Card, Typography, Input, Button, Row, Col } from "antd";
+import {
+  Layout,
+  Card,
+  Typography,
+  Input,
+  Button,
+  Row,
+  Col,
+  Popconfirm,
+} from "antd";
 import { useControls } from "hooks";
 
 const PlaygamePage = () => {
-  const { current, validateInput, timer } = useControls();
+  const { current, validateInput, timer, resetGame } = useControls();
 
   return (
     <Layout className="full-width">
@@ -36,7 +45,14 @@ const PlaygamePage = () => {
             ></Input>
           </Col>
           <Col>
-            <Button>Reset</Button>
+            <Popconfirm
+              title="Are you sure to delete this task?"
+              onConfirm={resetGame}
+              okText="Reset Game"
+              cancelText="No"
+            >
+              <Button>Reset</Button>
+            </Popconfirm>
           </Col>
         </Row>
       </Layout.Footer>

@@ -41,6 +41,14 @@ export const useControls = () => {
     }
   };
 
+  const resetGame = () => {
+    setCurrent(() => ({
+      alphabet: getRandomAlphabet(""),
+      count: 1,
+    }));
+    setTimer(initialTime.format("ss:S"));
+  };
+
   useEffect(() => {
     // if user finishes game within the time limit
     if (current.count >= ALPHABET_ITERATION_COUNT) {
@@ -66,5 +74,5 @@ export const useControls = () => {
     return () => clearTimeout(timerId);
   }, [timer, current.count, dispatch, navigate]);
 
-  return { current, validateInput, timer };
+  return { current, validateInput, timer, resetGame };
 };
